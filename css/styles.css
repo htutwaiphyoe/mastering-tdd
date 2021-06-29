@@ -42,4 +42,9 @@
     /* z-index */
     --z-tooltip: 10;
     --z-fixed: 100;
+
+    /* Hover overlay */
+    --img-transition: 0.3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
 }
