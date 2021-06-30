@@ -182,7 +182,7 @@ button {
         position: fixed;
         background-color: var(--body-color);
         top: 0;
-        right: 0;
+        right: -100%;
         width: 70%;
         height: 100%;
         box-shadow: -1px 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
