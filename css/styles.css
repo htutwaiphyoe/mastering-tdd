@@ -219,3 +219,8 @@ button {
     cursor: pointer;
     color: var(--text-color);
 }
+
+/* SHOW MENU */
+.show-menu {
+    right: 0;
+}
