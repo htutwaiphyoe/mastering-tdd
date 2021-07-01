@@ -250,7 +250,6 @@ button {
     position: relative;
     height: calc(100vh - var(--header-height));
     align-content: center;
-    justify-content: center;
     row-gap: 3rem;
 }
 
