@@ -359,3 +359,53 @@ button {
 .button--link:hover {
     background: none;
 }
+
+/* ABOUT */
+.about__data {
+    text-align: center;
+}
+
+.about__container {
+    row-gap: 2.5rem;
+}
+
+.about__description {
+    margin-bottom: var(--mb-2);
+}
+
+.about__img {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.about__img-overlay {
+    overflow: var(--img-hidden);
+}
+
+.about__img-one {
+    width: 130px;
+}
+
+.about__img-two {
+    width: 180px;
+}
+
+.about__img-one,
+.about__img-two {
+    transition: var(--img-transition);
+    -webkit-transition: var(--img-transition);
+    -moz-transition: var(--img-transition);
+    -ms-transition: var(--img-transition);
+    -o-transition: var(--img-transition);
+}
+
+.about__img-one:hover,
+.about__img-two:hover {
+    transform: var(--img-scale);
+    -webkit-transform: var(--img-scale);
+    -moz-transform: var(--img-scale);
+    -ms-transform: var(--img-scale);
+    -o-transform: var(--img-scale);
+}
