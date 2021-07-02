@@ -27,7 +27,6 @@ function removeMenu() {
 navLinks.forEach((navLink) => navLink.addEventListener("click", removeMenu));
 
 // change header background when scroll
-
 function changeHeaderBackground() {
     const header = document.getElementById("header");
     if (this.scrollY >= 100) {
