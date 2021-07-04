@@ -726,6 +726,7 @@ button {
 .sponsor__container {
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     justify-items: center;
+    align-items: center;
     row-gap: 3.5rem;
 }
 
@@ -1009,9 +1010,7 @@ button {
     .experience__overlay:nth-child(2) {
         width: 180px;
     }
-    .video__container {
-        grid-template-columns: 0.7fr;
-    }
+
     .subscribe__bg {
         background: none;
         padding: 0;
@@ -1026,5 +1025,68 @@ button {
     }
     .place__container {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* EXTRA LARGE DEVICE */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+    .home__container {
+        grid-template-rows: 2fr 0.5fr;
+    }
+    .home__info {
+        width: 328px;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    .home__info-title {
+        font-size: var(--normal-font-size);
+    }
+    .home__info-img {
+        width: 240px;
+    }
+    .about__img-one {
+        width: 240px;
+    }
+    .about__img-two {
+        width: 290px;
+    }
+    .discover__card {
+        width: 237px;
+    }
+    .discover__container {
+        width: 700px;
+    }
+    .discover__data {
+        left: 1.5rem;
+        bottom: 2rem;
+    }
+    .discover__title {
+        font-size: var(--h2-font-size);
+    }
+    .experience__content {
+        margin: var(--mb-1) 0;
+        column-gap: 3.5rem;
+    }
+    .experience__overlay:nth-child(1) {
+        width: 463px;
+        margin-right: 7rem;
+    }
+    .experience__overlay:nth-child(2) {
+        width: 220px;
+    }
+    .video__container {
+        grid-template-columns: 0.7fr;
+    }
+    .video__description {
+        padding: 0 5rem;
+    }
+    .place__container {
+        gap: 2rem;
+    }
+    .footer__content {
+        justify-items: center;
     }
 }
