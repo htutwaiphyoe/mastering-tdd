@@ -859,3 +859,32 @@ button {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--first-color-second);
 }
+
+/* MEDIA QUERIES */
+
+/* EXTEA SMALL DEVICE */
+@media screen and (max-width: 310px) {
+    .place__card {
+        width: 230px;
+    }
+    .experience__overlay:nth-child(1) {
+        width: 200px;
+    }
+    .experience__overlay:nth-child(2) {
+        width: 90px;
+    }
+    .experience__content {
+        padding: 0;
+    }
+    .home__info {
+        width: 190px;
+        padding: 1rem;
+    }
+    .experience__img,
+    .video__container {
+        padding: 0;
+    }
+    .home__social {
+        row-gap: 0.5rem;
+    }
+}
