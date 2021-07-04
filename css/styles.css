@@ -49,7 +49,7 @@
     --img-scale: scale(1.1);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 968px) {
     :root {
         --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
@@ -987,6 +987,7 @@ button {
     .about__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     .about__data,
     .about__title {
@@ -1081,12 +1082,19 @@ button {
         grid-template-columns: 0.7fr;
     }
     .video__description {
-        padding: 0 5rem;
+        padding: 0 8rem;
     }
     .place__container {
         gap: 2rem;
     }
     .footer__content {
         justify-items: center;
+    }
+}
+
+/* DOUBLE EXTRA LARGE DEVICES */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1024px;
     }
 }
