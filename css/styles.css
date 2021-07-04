@@ -888,3 +888,25 @@ button {
         row-gap: 0.5rem;
     }
 }
+
+/* MEDIUM DEVICES */
+@media screen and (min-width: 576px) {
+    .video__container {
+        display: grid;
+        grid-template-columns: 0.8fr;
+        justify-content: center;
+    }
+    .place__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .subscribe__form {
+        width: 470px;
+        margin: 0 auto;
+    }
+    .experience__overlay:nth-child(1) {
+        width: 400px;
+    }
+    .experience__overlay:nth-child(2) {
+        width: 180px;
+    }
+}
