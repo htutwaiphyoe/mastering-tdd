@@ -94,3 +94,29 @@ function scrollUp() {
 }
 
 window.addEventListener("scroll", scrollUp);
+
+// ACTIVE NAV LINK
+
+const sectionDOMs = document.querySelectorAll("section[id]"); // this selects only sections with id
+
+function showActiveLink() {
+    const currentPageYScroll = window.pageYOffset; // pageYOffset is equal to window.scrollY
+
+    sectionDOMs.forEach((currentSection) => {
+        const sectionHeight = currentSection.offsetHeight; // offsetHeight is equal to height of an element, including vertical padding and borders
+        const sectionTop = currentSection.offsetTop - 48; // offsetTop is the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node.
+        const sectionId = currentSection.getAttribute("id");
+
+        // select a link which href attribute contains #sectionId which is the children of .nav__menu
+        const currentNavLink = document.querySelector(`.nav__menu a[href*="#${sectionId}"]`);
+
+        // sectionTop + sectionHeight is equal to amount of currentPageYScroll to reach the end of current section
+        if (currentPageYScroll > sectionTop && currentPageYScroll <= sectionTop + sectionHeight) {
+            currentNavLink.classList.add("active-link");
+        } else {
+            currentNavLink.classList.remove("active-link");
+        }
+    });
+}
+
+window.addEventListener("scroll", showActiveLink);
