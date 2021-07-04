@@ -1098,3 +1098,14 @@ button {
         max-width: 1024px;
     }
 }
+
+/* TALL SCREEN DEVICES */
+@media screen and (min-height: 721px) {
+    body {
+        margin: 0;
+    }
+    .home__container,
+    .home__img {
+        height: 640px;
+    }
+}
