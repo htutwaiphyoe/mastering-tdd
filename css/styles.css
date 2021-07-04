@@ -768,7 +768,7 @@ button {
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     background-color: var(--first-color);
     opacity: 0.9;
     z-index: var(--z-tooltip);
@@ -787,4 +787,9 @@ button {
 .scrollup:hover {
     background-color: var(--first-color-alt);
     opacity: 1;
+}
+
+/* SHOW SCROLL UP */
+.show-scrollup {
+    bottom: 5rem;
 }

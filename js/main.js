@@ -82,3 +82,15 @@ function endVideo() {
 }
 
 videoFile.addEventListener("ended", endVideo);
+
+// Scroll Up
+function scrollUp() {
+    const scrollUpButton = document.getElementById("scrollup");
+    if (this.scrollY > 500) {
+        scrollUpButton.classList.add("show-scrollup");
+    } else {
+        scrollUpButton.classList.remove("show-scrollup");
+    }
+}
+
+window.addEventListener("scroll", scrollUp);
