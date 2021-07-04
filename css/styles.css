@@ -150,6 +150,9 @@ button {
     cursor: pointer;
 }
 
+main {
+    overflow-x: hidden;
+}
 /* REUSABLE CSS CLASSES */
 .section {
     padding: 4.5rem 0 2.5rem;
