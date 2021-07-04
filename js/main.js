@@ -120,3 +120,23 @@ function showActiveLink() {
 }
 
 window.addEventListener("scroll", showActiveLink);
+
+// THEME
+const themeButton = document.getElementById("theme-icon");
+const sunIcon = "ri-sun-line";
+const darkTheme = "dark-theme";
+
+let theme = localStorage.getItem("venus-theme");
+
+if (theme) {
+    themeButton.classList[theme === "dark" ? "add" : "remove"](sunIcon);
+    document.body.classList[theme === "dark" ? "add" : "remove"](darkTheme);
+}
+
+themeButton.addEventListener("click", () => {
+    themeButton.classList.toggle(sunIcon);
+    document.body.classList.toggle(darkTheme);
+    
+    theme = document.body.classList.contains(darkTheme) ? "dark" : "light";
+    localStorage.setItem("venus-theme", theme);
+});
