@@ -809,3 +809,20 @@ button {
 .show-scrollup {
     bottom: 5rem;
 }
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--first-color-second);
+}
