@@ -1,5 +1,11 @@
+import SignUp from "./pages/SignUp";
+
 function App() {
-  return <div className="App">Hi Test Driven Development</div>;
+  return (
+    <main>
+      <SignUp />
+    </main>
+  );
 }
 
 export default App;
